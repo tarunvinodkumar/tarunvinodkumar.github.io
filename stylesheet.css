@@ -195,3 +195,36 @@ span.highlight {
   padding: 10px;
 }
 */
+
+/* Container for each row */
+.group {
+  margin-bottom: 20px;
+}
+
+/* Left column (dates) */
+.group .date-col {
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+/* Right column title */
+.group .org-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Role line */
+.group .role-title {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+/* Bullet list text */
+.group ul {
+  margin-top: 4px;
+  margin-bottom: 0;
+}
