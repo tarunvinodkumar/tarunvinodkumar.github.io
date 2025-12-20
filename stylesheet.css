@@ -255,3 +255,11 @@ span.highlight {
 .entry-col {
   flex: 1;
 }
+
+body {
+  background-color: #f4f7fb;  /* light blue */
+}
+
+table {
+  background-color: #ffffff;  /* white */
+}
