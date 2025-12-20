@@ -252,7 +252,7 @@ span.highlight {
   flex: 1;
 }
 
-.pub-title {
+.pub-title a {
   font-size: 22px !important;      /* larger paper title */
   font-weight: 600;
   /*color: #406f3c;       /* or #111111 if you prefer black */
