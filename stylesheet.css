@@ -142,25 +142,30 @@ span.highlight {
 }
 
 .tabs {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  display: flex;
+  gap: 8px;
 }
 
 .tablink {
-  background-color: #f2f2f2;
-  border: 1px solid #ccc;
-  border-bottom: none;
-  padding: 6px 12px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  padding: 6px 0;
   cursor: pointer;
   font-size: 14px;
+  font-weight: 600;
+  color: #666666;
 }
 
 .tablink.active {
-  background-color: #ffffff;
-  font-weight: bold;
+  color: #111111;
+  border-bottom-color: #1772d0; /* your link blue */
 }
 
 .tabcontent {
-  border: 1px solid #ccc;
-  padding: 10px;
+  border: none;
+  padding: 0;
+  margin-top: 8px;
 }
