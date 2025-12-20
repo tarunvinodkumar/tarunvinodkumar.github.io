@@ -259,9 +259,12 @@ span.highlight {
 body {
   /*background-color: #f4f7fb !important;  /* light blue */
   /*background-color: #8FBC8F !important;  /* dark sea green */
-  background-color: #ACE1AF !important; /* celadon */
+  /*background-color: #ACE1AF !important; /* celadon */
+  background-color: #ecf7d7 !important; /* pale pastel green */
+
 }
 
 body > table {
-  background-color: #ffffff;  /* white */
+  /*background-color: #ffffff;  /* white */
+  background-color: #ecf7d7 !important; /* pale pastel green */
 }
