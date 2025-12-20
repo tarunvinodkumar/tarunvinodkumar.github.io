@@ -64,7 +64,8 @@
 }
 
 a {
-  color: #1772d0;
+  /*color: #1772d0;*/
+  color: #669966;
   text-decoration: none;
 }
 
@@ -170,6 +171,8 @@ span.highlight {
 .tablink.active {
   color: #111111;
   border-bottom-color: #1772d0; /* your link blue */
+  
+  border-bottom-color: #669966; /* your link russian green */
 }
 
 .tabcontent {
