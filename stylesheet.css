@@ -156,6 +156,7 @@ span.highlight {
   margin-bottom: 12px;
   display: flex;
   gap: 8px;
+  border-bottom: 1px solid #b6bdb3;/*#d8d4c4;  /* faint line, adjust color */
 }
 
 .tablink {
