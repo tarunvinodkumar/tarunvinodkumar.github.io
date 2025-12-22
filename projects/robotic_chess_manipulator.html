@@ -109,27 +109,27 @@
 
                   <div class="project-section-title">Motivation &amp; Aim</div>
                   <p>
-                    The goal was to design a generalizable small-object manipulation platform, instantiated
-                    as a robotic chess manipulator. A user enters the source and destination squares; the
-                    robot moves to the correct position, grasps the piece, translates across the board,
-                    and places the piece at the new location.
+                    The goal was to design a generalizable small-object manipulation platform, which was chosen to be implemented
+                    as a robotic chess manipulator. A user enters the initial and target squares, prompting the
+                    system to move to the correct position, grasp the piece, translate across the board,
+                    and place the piece at the new location.
                   </p>
 
                   <div class="project-section-title">Performance Metrics</div>
                   <ul class="proj-list">
-                    <li>Pick and place within the 3.5 cm &times; 3.5 cm target square bounds.</li>
+                    <li>Grab and place within the 3.5 cm &times; 3.5 cm target square bounds.</li>
                     <li>Accurate sensing of when the piece contacts the board to control z-motion.</li>
                   </ul>
 
                   <div class="project-section-title">Mechanical &amp; Mechatronic Design</div>
                   <p>
                     The custom grasper uses a rack-and-pinion mechanism driven by a 28BYJ stepper motor.
-                    The design integrates a rod-bearing interface and opposed paddles to provide a secure,
-                    symmetric grasp on standard chess pieces while remaining compact and lightweight.
+                    The design integrates with the gantry system of an Ultimaker S3 3D-printer and actuates grasper paddles to provide a secure,
+                    symmetric grasp on chess pieces while remaining compact and lightweight.
                   </p>
 
                   <div class="project-section-title">Sensors &amp; Actuators</div>
-                  <p><strong>Actuators.</strong> A 28BYJ stepper motor provides the gripping motion, chosen for
+                  <p><strong>Actuators.</strong> A 28BYJ stepper motor provides the grasping actuation, chosen for
                     its 3.4 N·cm holding torque, low current draw, and small form factor, which satisfied
                     the torque and packaging requirements of the grasper.</p>
                   <p><strong>Sensors.</strong> A Hall-effect sensor detects proximity of the piece to the board,
@@ -140,9 +140,9 @@
                   <div class="project-section-title">Control &amp; State Machine</div>
                   <p>
                     The system is orchestrated by an STM microcontroller communicating with a host computer
-                    and the 3D-printer gantry. A state machine coordinates motion and grasping: moving to the
+                    and the 3D-printer gantry. The following state machine outlines the motion and grasping procedure: moving to the
                     source square, closing the grasper, lifting, translating to the destination square, sensing
-                    board proximity via the Hall-effect sensor, and opening the grasper to release the piece.
+                    if chess piece is placed via the Hall-effect sensor, and opening the grasper to release the piece.
                   </p>
 
                   <div class="project-section-title">Challenges &amp; Iteration</div>
