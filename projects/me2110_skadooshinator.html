@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skadooshinator – ME 2110 Major Design Project</title>
+  <!-- Use main site styles -->
+  <link rel="stylesheet" href="../stylesheet.css">
+  <style>
+    .project-title {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+    .project-subtitle {
+      font-size: 15px;
+      color: #777777;
+      margin-bottom: 16px;
+    }
+    .project-section-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 6px;
+    }
+    .project-metadata {
+      font-size: 14px;
+      color: #777777;
+      margin-bottom: 12px;
+    }
+    .project-hero {
+      width: 100%;
+      max-height: 260px;
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 20px;
+      background-color: #e0e0e0;
+    }
+    .project-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .project-image-row {
+      display: flex;
+      gap: 16px;
+      margin: 12px 0 4px 0;
+    }
+    .project-image-row img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+    .project-image-caption {
+      font-size: 13px;
+      color: #777777;
+      margin-bottom: 8px;
+    }
+    .pill {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid #b8b0a0;
+      font-size: 12px;
+      margin-right: 6px;
+      margin-bottom: 4px;
+    }
+    .proj-list {
+      margin-top: 4px;
+      margin-bottom: 0;
+    }
+    .back-link {
+      font-size: 14px;
+      margin-bottom: 12px;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <table style="width:100%;max-width:950px;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0">
+        <td style="padding:0">
+          <table style="width:100%;border:0;border-spacing:0;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:16px;width:100%;vertical-align:middle">
+
+                  <a href="../" class="back-link">← Back to selected projects</a>
+
+                  <div class="project-title">Skadooshinator – ME 2110 Major Design Project</div>
+                  <div class="project-subtitle">
+                    ME 2110 – Creative Decisions and Design · Georgia Tech · Spring 2024
+                  </div>
+
+                  <!-- Hero image from report/presentation -->
+                  <div class="project-hero">
+                    <img src="../images/tarun/skadooshinator_overview.jpg"
+                         alt="Skadooshinator ME 2110 competition machine on the Kung Fu Panda themed field">
+                  </div>
+
+                  <div class="project-metadata">
+                    <span class="pill">Team project (Skadoosh Squadron)</span>
+                    <span class="pill">Mechanism design · Pneumatics · Arduino control</span>
+                    <span class="pill">Design process: QFD · morph charts · FMEA</span>
+                  </div>
+
+                  <p>
+                    For Georgia Tech’s ME 2110 major design project, our team designed the
+                    <strong>Skadooshinator</strong>, an autonomous machine that helps Po defend the
+                    Valley of Peace on a Kung Fu Panda–themed competition field.[file:1]
+                    Within strict constraints on cost, footprint, and 40‑second run time, the
+                    system raises Po to the Jade Palace courtyard, retrieves the Dragon Scroll,
+                    and knocks down Tai Lung while protecting bunny villagers to maximize
+                    competition score.[file:1]
+                  </p>
+
+                  <div class="project-section-title">Problem & Constraints</div>
+                  <p>
+                    The robot needed to execute several tasks: lift Po above three feet and into
+                    the courtyard, retrieve the correct Dragon Scroll from a rotating centerpiece,
+                    manage Tai Lung and the bunny villager, and satisfy home‑zone objectives, all
+                    while constrained to a 12&quot; × 24&quot; × 18&quot; envelope, banana‑plug activation,
+                    standardized actuators, and a 40‑second autonomous run.[file:1][file:2]
+                  </p>
+
+                  <div class="project-image-row">
+                    <img src="../images/tarun/skadoosh_field_layout.jpg"
+                         alt="Competition field layout and scoring objectives for the ME 2110 Kung Fu Panda game">
+                    <img src="../images/tarun/skadoosh_constraints_qfd.jpg"
+                         alt="House of Quality and constraints used to prioritize customer requirements">
+                  </div>
+                  <div class="project-image-caption">
+                    Competition objectives and House of Quality used to prioritize reliability,
+                    autonomy, and high point‑scoring tasks.[file:2][file:1]
+                  </div>
+
+                  <div class="project-section-title">Design Overview</div>
+                  <p>
+                    Guided by a House of Quality, specification sheet, function tree, and
+                    morphological chart, the team evaluated five concepts and selected the
+                    Skadooshinator as the highest‑scoring design in the evaluation matrix.[file:1][file:2]
+                    The final machine concentrates on high‑value, reliable mechanisms—Po’s lift,
+                    the Dragon Scroll retrieval, and Tai Lung management—rather than low‑value,
+                    crowded objectives like baozi collection.[file:1]
+                  </p>
+
+                  <div class="project-image-row">
+                    <img src="../images/tarun/skadoosh_cad_overview.jpg"
+                         alt="CAD overview of the Skadooshinator showing major subsystems">
+                    <img src="../images/tarun/skadoosh_physical_build.jpg"
+                         alt="Photo of the completed Skadooshinator robot on the competition table">
+                  </div>
+                  <div class="project-image-caption">
+                    CAD and physical build of the Skadooshinator, highlighting the pneumatic
+                    drawer‑slide assembly, Tai Lung arm, Dragon Scroll mechanism, and cascading lift.[file:1]
+                  </div>
+
+                  <div class="project-section-title">Key Mechanisms</div>
+                  <p>
+                    The core chassis uses drawer slides driven by a pneumatic cylinder to push a
+                    wooden crossbar toward the centerpiece, simultaneously <strong>deploying the
+                    Dragon Scroll and Tai Lung mechanisms</strong>.[file:1]
+                    A laser‑cut MDF arm, powered by rubber bands and a mousetrap spring, swings
+                    Tai Lung out of the home zone while keeping the robot safely in bounds.[file:1]
+                  </p>
+                  <p>
+                    The Dragon Scroll subsystem is a four‑bar linkage with a hooked end that
+                    snags the correct scroll from the rotating centerpiece. An Arduino‑controlled
+                    motor drives a cam wheel tied into the linkage, while a rotating limit‑switch
+                    mechanism and timing algorithm estimate track speed and cue deployment for
+                    the correct quadrant.[file:1][file:2]
+                  </p>
+                  <p>
+                    Po’s ascent uses a multi‑stage cascading lift built from aluminum T‑slot
+                    extrusions for stiffness and repeatability. String‑coupled stages climb in
+                    sequence, keeping Po suspended rather than dropped, which reduces
+                    interference from competing robots.[file:1]
+                  </p>
+
+                  <div class="project-section-title">Control & Strategy</div>
+                  <p>
+                    The control system centers on an Arduino that begins execution when banana
+                    plugs are energized. A potentiometer selects track color; the code maps this
+                    setting to a calibrated timing delay for the Dragon Scroll mechanism so the
+                    hook fires when the correct scroll passes the platform.[file:1]
+                    This strategy compensates for speed variations between competition tracks and
+                    keeps the routine fully autonomous.[file:1][file:2]
+                  </p>
+
+                  <div class="project-section-title">Results</div>
+                  <ul class="proj-list">
+                    <li>Selected as the top concept in the evaluation matrix with
+                        296 weighted points across customer requirements.[file:1]</li>
+                    <li>Improved from 53rd place after Sprint 3 to 5th overall in the final
+                        competition.[file:1]</li>
+                    <li>Achieved a maximum score of 117 points and a standard deviation of
+                        12.85 points across scoring rounds, meeting the reliability target of
+                        &lt; 15‑point spread.[file:1]</li>
+                    <li>Maintained low cost at approximately $77, well under the $120 budget
+                        constraint.[file:1]</li>
+                  </ul>
+
+                  <div class="project-section-title">Reflections</div>
+                  <p>
+                    The Skadooshinator emphasized reliability and points per mechanism instead of
+                    doing “everything,” which proved critical to climbing the rankings. Working on
+                    this project sharpened skills in structured design methods, rapid mechanism
+                    iteration, and integrating mechanical systems with pneumatics and embedded
+                    control under tight competition constraints.[file:1][file:2]
+                  </p>
+
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
