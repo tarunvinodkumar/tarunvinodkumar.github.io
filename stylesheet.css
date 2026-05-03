@@ -87,12 +87,6 @@ a {
   line-height: 1.6;     /* add line height for readability */
 }
 
-a1 {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 8px;      /* was 14px */
-  line-height: 1.6;     /* add line height for readability */
-}
-
 .name {
   padding-top: 24px;
   margin: 0;
@@ -329,7 +323,7 @@ body {
   /*background-color: #8FBC8F !important;  /* dark sea green */
   /*background-color: #ACE1AF !important; /* celadon */
   /*background-color: #ecf7d7 !important; /* pale pastel green */
-  background-color: #F0F2E4 !important; /* soft sage green */
+  background-color: #ffffff !important; /* white */
   padding: 32px 16px;
 }
 
@@ -337,7 +331,7 @@ body > table {
   /*background-color: #ffffff;  /* white */
   /*background-color: #ecf7d7 !important; /* pale pastel green */
   /*background-color: #F0F2E4 !important; /* soft sage green */
-  background-color: #ffffff !important;
+  background-color: #F0F2E4 !important; /* soft sage green */
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
