@@ -87,6 +87,12 @@ a {
   line-height: 1.6;     /* add line height for readability */
 }
 
+a1 {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 8px;      /* was 14px */
+  line-height: 1.6;     /* add line height for readability */
+}
+
 .name {
   padding-top: 24px;
   margin: 0;
