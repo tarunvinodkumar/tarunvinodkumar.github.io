@@ -383,6 +383,7 @@ body > table {
   column-gap: 26px;
   align-items: start;
   margin-bottom: 26px;
+  color: #7a7a7a;
 }
 
 .news-item:last-child {
