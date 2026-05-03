@@ -410,3 +410,23 @@ body > table {
   color: #d2b48c;
   text-decoration: none;
 }
+
+.news-item.news-hidden {
+  display: none;
+}
+
+.news-toggle-btn {
+  background: none;
+  border: none;
+  color: #669966;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 4px 0;
+  margin-top: 8px;
+  margin-left: 28px;
+}
+
+.news-toggle-btn:hover {
+  color: #d2b48c;
+}
