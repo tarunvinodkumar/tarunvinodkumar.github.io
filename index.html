@@ -63,7 +63,7 @@
 			   <section class="news-section">
 				  <h2>News</h2>
 				
-				  <div class="news-list">
+				  <div class="news-list" id="news-list">
 					<div class="news-item">
 					  <div class="news-date">05/2026</div>
 					  <div class="news-text">Committed to joining Johns Hopkins University and Dr. Axel Krieger for my PhD.</div>
@@ -89,6 +89,7 @@
 					  <div class="news-text">Awarded the Wellington Family Scholarship at GT.</div>
 					</div>
 				  </div>
+					<button class="news-toggle-btn" id="news-toggle-btn" onclick="toggleNews()">Show more</button>
 				</section>
 			  </td>
 			</tr>
@@ -546,6 +547,27 @@
       document.getElementById(tabId).style.display = "block";
       evt.currentTarget.classList.add("active");
     }
+		
+	(function () {
+	  const MAX_VISIBLE = 3;
+	  const items = document.querySelectorAll('#news-list .news-item');
+	  const btn = document.getElementById('news-toggle-btn');
+	  let expanded = false;
+	
+	  items.forEach((item, i) => {
+	    if (i >= MAX_VISIBLE) item.classList.add('news-hidden');
+	  });
+	
+	  if (items.length <= MAX_VISIBLE) btn.style.display = 'none';
+	
+	  window.toggleNews = function () {
+	    expanded = !expanded;
+	    items.forEach((item, i) => {
+	      if (i >= MAX_VISIBLE) item.classList.toggle('news-hidden', !expanded);
+	    });
+	    btn.textContent = expanded ? 'Show less' : 'Show more';
+	  };
+	})();
     </script>
   </body>
 </html>
