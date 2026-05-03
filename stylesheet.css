@@ -324,12 +324,16 @@ body {
   /*background-color: #ACE1AF !important; /* celadon */
   /*background-color: #ecf7d7 !important; /* pale pastel green */
   background-color: #F0F2E4 !important; /* soft sage green */
+  padding: 32px 16px;
 }
 
 body > table {
   /*background-color: #ffffff;  /* white */
   /*background-color: #ecf7d7 !important; /* pale pastel green */
-  background-color: #F0F2E4 !important; /* soft sage green */
+  /*background-color: #F0F2E4 !important; /* soft sage green */
+  background-color: #ffffff !important;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
 /* Lightbox overlay */
