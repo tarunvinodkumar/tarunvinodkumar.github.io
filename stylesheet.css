@@ -363,45 +363,46 @@ body > table {
 .news-section {
   margin-top: 36px;
   margin-bottom: 44px;
+  padding-left: 16px;   /* matches left inset used by your other content blocks */
 }
 
 .news-section h2 {
   font-size: 28px;
   font-weight: 500;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
   color: #111111;
 }
 
 .news-timeline {
   position: relative;
-  padding-left: 34px;
+  margin-left: 0;
+  padding-left: 54px;   /* space for line/dot gutter + content */
 }
 
 .news-timeline::before {
   content: "";
   position: absolute;
-  left: 8px;
-  top: 8px;
-  bottom: 10px;
+  left: 15px;           /* exact center line for dots */
+  top: 6px;
+  bottom: 12px;
   width: 2px;
-  background: #d9d9d9;
+  background: #d8d8d8;
 }
 
 .news-item {
   position: relative;
-  margin-bottom: 28px;
-  padding-left: 22px;
+  margin-bottom: 34px;
 }
 
 .news-item::before {
   content: "";
   position: absolute;
-  left: -1px;
-  top: 5px;
+  left: -39px;          /* places dot center on the line */
+  top: 4px;
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background: #d9d9d9;
+  background: #d8d8d8;
 }
 
 .news-date {
@@ -409,7 +410,6 @@ body > table {
   line-height: 1.2;
   color: #7a7a7a;
   margin-bottom: 8px;
-  letter-spacing: 0.01em;
 }
 
 .news-text {
@@ -426,4 +426,8 @@ body > table {
 
 .news-text a:hover {
   text-decoration: underline;
+}
+
+.news-item:last-child {
+  margin-bottom: 0;
 }
