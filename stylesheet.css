@@ -513,3 +513,31 @@ body > table {
   }
 
 }
+
+:root {
+  --jhu-blue: #002D72;
+  --medical-teal: #00A3B1;
+  --text-dark: #2D3436;
+  --bg-light: #F4F7F9;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.name {
+    color: var(--jhu-blue) !important;
+    font-weight: 800;
+}
+
+a {
+    color: var(--medical-teal);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--jhu-blue);
+    text-decoration: underline;
+}
