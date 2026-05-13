@@ -15,6 +15,23 @@
   </head>
 
   <body>
+		<header class="site-header">
+		  <div class="site-header-inner">
+		    <div class="site-brand">
+		      <img src="images/tarun/hopkins_logo.png" alt="Johns Hopkins University logo">
+		      <div class="site-brand-text">
+		        <div class="site-brand-top">Incoming PhD Student</div>
+		        <div class="site-brand-bottom">Johns Hopkins University</div>
+		      </div>
+		    </div>
+		
+		    <nav class="site-nav">
+		      <a href="#tabs" onclick="openTabById('publications'); return false;">Publications</a>
+		      <a href="#tabs" onclick="openTabById('projects'); return false;">Projects</a>
+		      <a href="data/CV_Tarun_Vinodkumar_public.pdf">CV</a>
+		    </nav>
+		  </div>
+		</header>
     <table style="width:100%;max-width:950px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
         <td style="padding:0px">
@@ -105,7 +122,7 @@
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tbody>
               <tr>
-                <td style="padding:16px;width:100%;vertical-align:middle">
+                <td id="tabs" style="padding:16px;width:100%;vertical-align:middle">
                   <div class="tabs">
                     <button class="tablink active" onclick="openTab(event, 'experience')">Experience</button>
                     <button class="tablink" onclick="openTab(event, 'education')">Education</button>
@@ -551,8 +568,32 @@
         tablinks[i].classList.remove("active");
       }
       document.getElementById(tabId).style.display = "block";
-      evt.currentTarget.classList.add("active");
+		
+	  if (evt && evt.currentTarget) {
+	    evt.currentTarget.classList.add("active");
+	  }
     }
+
+	function openTabById(tabId) {
+	  var tabButtonMap = {
+	    experience: 0,
+	    education: 1,
+	    publications: 2,
+	    projects: 3
+	  };
+	
+	  openTab(null, tabId);
+	
+	  var tablinks = document.getElementsByClassName("tablink");
+	  if (tablinks[tabButtonMap[tabId]]) {
+	    tablinks[tabButtonMap[tabId]].classList.add("active");
+	  }
+	
+	  var target = document.getElementById("tabs");
+	  if (target) {
+	    target.scrollIntoView({ behavior: "smooth", block: "start" });
+	  }
+	}
 		
 	(function () {
 	  const MAX_VISIBLE = 3;
