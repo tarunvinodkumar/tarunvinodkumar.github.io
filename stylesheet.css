@@ -173,7 +173,7 @@ span.highlight {
 .tablink.active {
   color: #111111;
   /*border-bottom-color: #1772d0; /* your link blue */
-  border-bottom-color: #669966; /* your link russian green */
+  border-bottom-color: #b8c9ad; /* green mist #669966; /* your link russian green */
 }
 
 .tabcontent {
@@ -423,7 +423,7 @@ body > table {
 .news-toggle-btn {
   background: none;
   border: none;
-  color: #669966;
+  color: #b8c9ad; /* green mist #669966; */
   font-size: 14px;
   font-weight: 600;
   cursor: pointer;
@@ -637,7 +637,7 @@ body > table {
 }
 
 .site-header.scrolled {
-  background: #b8c9ad; /* scrolled state */
+  background: #b8c9ad; /* green mist, scrolled state */
   border-bottom: 1px solid transparent;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
