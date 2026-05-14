@@ -599,6 +599,20 @@
 	  }
 	}
 		
+	  function updateHeaderOnScroll() {
+	    const header = document.querySelector('.site-header');
+	    if (!header) return;
+	
+	    if (window.scrollY > 20) {
+	      header.classList.add('scrolled');
+	    } else {
+	      header.classList.remove('scrolled');
+	    }
+	  }
+	
+	  window.addEventListener('scroll', updateHeaderOnScroll);
+	  window.addEventListener('load', updateHeaderOnScroll);
+		
 	(function () {
 	  const MAX_VISIBLE = 3;
 	  const items = document.querySelectorAll('#news-list .news-item');
