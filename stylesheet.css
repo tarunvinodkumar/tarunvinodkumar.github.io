@@ -653,8 +653,8 @@ body > table {
 }
 
 .site-brand img {
-  height: 38px;
-  width: auto;
+  height: auto; /* 38px; */
+  width: 190px;
   display: block;
 }
 
