@@ -637,7 +637,7 @@ body > table {
 }
 
 .site-header.scrolled {
-  background: rgba(255, 255, 255, 0.98); /* scrolled state */
+  background: #b7faaa; /* scrolled state */
   border-bottom: 1px solid #d7dccb;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
@@ -693,9 +693,9 @@ body > table {
 }
 
 .site-nav a {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
-  color: #3f4650;
+  color: #111111;
   text-decoration: none;
 }
 
