@@ -561,41 +561,41 @@
       </tr>
     </table>
     <script>
-    function openTab(evt, tabId) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-      }
-      tablinks = document.getElementsByClassName("tablink");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-      }
-      document.getElementById(tabId).style.display = "block";
-		
-	  if (evt && evt.currentTarget) {
-	    evt.currentTarget.classList.add("active");
+	function openTab(evt, tabId) {
+	  var i, tabcontent, tablinks;
+	  tabcontent = document.getElementsByClassName("tabcontent");
+	  for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
 	  }
-    }
-
+	  tablinks = document.getElementsByClassName("tablink");
+	  for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].classList.remove("active");
+	  }
+	  document.getElementById(tabId).style.display = "block";
+	
+	  if (evt && evt.currentTarget) {
+		evt.currentTarget.classList.add("active");
+	  }
+	}
+	
 	function openTabById(tabId) {
 	  var tabButtonMap = {
-	    experience: 0,
-	    education: 1,
-	    publications: 2,
-	    projects: 3
+		experience: 0,
+		education: 1,
+		publications: 2,
+		projects: 3
 	  };
 	
 	  openTab(null, tabId);
 	
 	  var tablinks = document.getElementsByClassName("tablink");
 	  if (tablinks[tabButtonMap[tabId]]) {
-	    tablinks[tabButtonMap[tabId]].classList.add("active");
+		tablinks[tabButtonMap[tabId]].classList.add("active");
 	  }
 	
 	  var target = document.getElementById("tabs");
 	  if (target) {
-	    target.scrollIntoView({ behavior: "smooth", block: "start" });
+		target.scrollIntoView({ behavior: "smooth", block: "start" });
 	  }
 	}
 		
