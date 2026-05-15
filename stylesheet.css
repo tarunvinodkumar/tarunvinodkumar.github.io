@@ -1085,3 +1085,230 @@ img {
     max-width: 100% !important;
   }
 }
+
+.mobile-section-title {
+  display: none;
+}
+  
+@media (max-width: 768px) {
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    padding-top: 78px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .page-shell {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0 14px 0;
+    border-radius: 12px;
+    box-shadow:
+      0 0 0 1px rgba(0, 45, 114, 0.08),
+      0 0 14px rgba(0, 45, 114, 0.06),
+      0 6px 16px rgba(0, 45, 114, 0.04);
+  }
+
+  .page-shell table,
+  .page-shell tbody,
+  .page-shell tr,
+  .page-shell td {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Intro row becomes stacked */
+  .intro-row,
+  .intro-row > td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .intro-row td {
+    padding: 12px 14px !important;
+  }
+
+  .intro-row td:last-child {
+    text-align: center !important;
+    padding-bottom: 0 !important;
+  }
+
+  .intro-row td:first-child {
+    padding-top: 0 !important;
+  }
+
+  .intro-row img[alt="profile photo"] {
+    display: block !important;
+    width: 145px !important;
+    max-width: 145px !important;
+    height: auto !important;
+    margin: 0 auto 12px auto !important;
+  }
+
+  .name {
+    font-size: 28px;
+    line-height: 1.1;
+    padding-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  body,
+  td,
+  th,
+  tr,
+  p,
+  a {
+    font-size: 15px;
+    line-height: 1.58;
+  }
+
+  /* Ethan-style mobile: hide tab bar */
+  .tabs {
+    display: none !important;
+  }
+
+  /* Force all tab sections visible */
+  .tabcontent {
+    display: block !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    margin-bottom: 28px;
+  }
+
+  /* Mobile-only section headings */
+  .mobile-section-title {
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: #111111;
+    margin: 0 0 14px 0;
+  }
+
+  /* Experience/Education rows stack nicely */
+  .group {
+    margin-bottom: 18px;
+  }
+
+  .group-row {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .date-col {
+    min-width: 0;
+    max-width: none;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    margin-bottom: 2px;
+  }
+
+  .group .org-title {
+    font-size: 18px;
+  }
+
+  .group .role-title {
+    font-size: 16px;
+  }
+
+  /* Publications and projects stack */
+  .pub-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 24px;
+  }
+
+  .pub-image {
+    width: 100% !important;
+    height: auto;
+    aspect-ratio: 16 / 10;
+  }
+
+  .pub-title a {
+    font-size: 17px !important;
+    line-height: 1.3;
+  }
+
+  .pub-authors,
+  .pub-author-me {
+    font-size: 15px;
+    line-height: 1.45;
+  }
+
+  .pub-button {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  /* News remains scroll-first */
+  .news-list {
+    padding-left: 16px;
+    border-left-width: 2px;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+  }
+
+  .news-date {
+    font-size: 12px;
+  }
+
+  .news-text {
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+  .news-toggle-btn {
+    margin-left: 18px;
+    font-size: 13px;
+  }
+
+  /* Smaller header */
+  .site-header {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .site-header-inner {
+    padding: 8px 12px;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .site-brand img {
+    height: 28px;
+  }
+
+  .site-nav {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 14px;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .site-nav a {
+    flex: 0 0 auto;
+    font-size: 13px;
+  }
+
+  #tabs,
+  #news {
+    scroll-margin-top: 96px;
+  }
+}
