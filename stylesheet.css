@@ -1403,3 +1403,190 @@ img {
     display: none !important;
   }
 }
+
+/* ==========================================================================
+   Mobile Responsive Architecture Overrides (Scroll-First Configuration)
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  /* 1. Global Page Reset & Container Framework */
+  body {
+    padding: 80px 16px 24px 16px !important; /* Top padding stops content hiding behind sticky header */
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+  
+  .page-shell {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  /* 2. Overthrow Legacy Nested Table Structures */
+  table, tbody, tr, td {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* 3. Header & Navigation Refinements */
+  .site-header {
+    padding: 10px 0 !important;
+  }
+  
+  .site-header-inner {
+    flex-direction: column !important;
+    gap: 8px !important;
+    align-items: center !important;
+    padding: 0 12px !important;
+  }
+
+  /* Scale down JHU header brand logo */
+  .site-brand img {
+    max-height: 28px !important;
+    width: auto !important;
+  }
+
+  .site-nav {
+    gap: 16px !important;
+    font-size: 0.95rem !important;
+  }
+
+  /* 4. Introduction/Profile Section Cleanup */
+  .intro-text-cell {
+    width: 100% !important;
+    text-align: left !important;
+    order: 2; /* Drops bio text below avatar image on narrow screens */
+  }
+
+  .intro-text-cell .name {
+    font-size: 2rem !important;
+    margin-top: 12px !important;
+    text-align: center !important;
+  }
+
+  .intro-links {
+    margin-top: 16px !important;
+    font-size: 1.05rem !important;
+  }
+
+  .intro-image-cell {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    order: 1;
+    padding: 16px 0 !important;
+  }
+
+  /* Resize and constrain the main profile avatar */
+  .intro-image-cell img {
+    width: 140px !important;
+    height: 140px !important;
+    max-width: 140px !important;
+    margin: 0 auto !important;
+    border: 3px solid #f0f4f8;
+  }
+
+  /* 5. Scroll-First Visibility System (Unlocking Tabs) */
+  .tabs {
+    display: none !important; /* Discards horizontal selectors entirely */
+  }
+
+  .tabcontent {
+    display: block !important; /* Overrides inline JS styling injection natively */
+    opacity: 1 !important;
+    margin-bottom: 56px !important;
+    scroll-margin-top: 90px; /* Offset anchor positions for smooth header scrolls */
+  }
+
+  /* Expose stylized native section titles on mobile */
+  .mobile-section-title {
+    display: block !important;
+    font-size: 1.5rem !important;
+    font-weight: 700 !important;
+    color: #1a365d; /* Refined professional dark navy blue primary */
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 6px !important;
+    margin-top: 32px !important;
+    margin-bottom: 20px !important;
+  }
+
+  /* 6. List & Entry Layout Corrections */
+  .group-row {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 4px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .date-col {
+    width: auto !important;
+    font-size: 0.8rem !important;
+    font-weight: 600 !important;
+    color: #718096 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .entry-col {
+    width: 100% !important;
+  }
+  
+  .entry-col ul {
+    padding-left: 20px !important;
+    margin-top: 6px !important;
+  }
+
+  /* Ensure organization/company branding stays correctly sized */
+  .entry-col img {
+    width: 24px !important;
+    height: 24px !important;
+    flex-shrink: 0 !important;
+  }
+
+  .org-title {
+    font-size: 1rem !important;
+    font-weight: 600 !important;
+  }
+
+  /* 7. Publication & Project Media Rescaling */
+  .pub-entry {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+    margin-bottom: 28px !important;
+  }
+
+  .pub-image {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block !important;
+  }
+
+  /* Restrain CAD renders & publication graphics from inflating */
+  .pub-image img {
+    width: 100% !important;
+    max-width: 220px !important; /* Keeps preview cards contained nicely */
+    height: auto !important;
+    border-radius: 6px !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: block;
+    margin: 0 left;
+  }
+  
+  .pub-title {
+    font-size: 1.1rem !important;
+    line-height: 1.4 !important;
+  }
+}
+
+/* Guard Rails: Hide mobile specific structural markup on widescreen viewport configurations */
+@media (min-width: 768px) {
+  .mobile-section-title {
+    display: none !important;
+  }
+}
