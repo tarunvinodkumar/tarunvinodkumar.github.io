@@ -19,67 +19,40 @@
 		  <div class="site-header-inner">
 		    <div class="site-brand">
 		      <img src="images/tarun/JHU.logo_horizontal.blue.svg" alt="Johns Hopkins University logo">
-				<!--
-		      <div class="site-brand-text">
-		        <div class="site-brand-top">Incoming PhD Student</div>
-		        <div class="site-brand-bottom">Johns Hopkins University</div>
-		      </div>
-				-->
 		    </div> 
 		    <nav class="site-nav">
-		      <a href="#tabs" onclick="openTabById('publications'); return false;">Publications</a>
-		      <a href="#tabs" onclick="openTabById('projects'); return false;">Projects</a>
+		      <a href="#publications" onclick="openTabById('publications'); return false;">Publications</a>
+		      <a href="#projects" onclick="openTabById('projects'); return false;">Projects</a>
 		      <a href="data/CV_Tarun_Vinodkumar_public.pdf">CV</a>
 		    </nav>
 		  </div>
 		</header>
-	  <!--
-    <table style="width:100%;max-width:950px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	  -->
+
 	<div class="page-shell">
     	<table style="width:100%;max-width:950px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 		<tr class="intro-row" style="padding:0px">
         <td style="padding:0px">
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <td class="intro-text-cell" style="padding:2.5%;width:63%;vertical-align:middle">
                 <p class="name" style="text-align: center;">
                   Tarun Vinodkumar
                 </p>
                 <p>
 		I am a 4th year Mechanical Engineering student at the Georgia Institute of Technology in Atlanta, where I am exploring my passion for medical robotics. My goal is a blend of industry and academia, where I can advance medical technology that directly improves patient outcomes. My research focuses on developing intelligent surgical instrumentation to augment the capabilities of minimally invasive surgery. I am interested in data-driven design frameworks, advanced multimodal sensing, surgical robotics.
                 </p>
-                <p style="text-align:center">
+                <p style="text-align:center" class="intro-links">
                   <a href="mailto:tarunvinodkumar@gmail.com">Email</a> &nbsp;/&nbsp;
-					<!--
-                  <a href="data/CV_Tarun_Vinodkumar_public.pdf">CV</a> &nbsp;/&nbsp;
-					-->
                   <a href="data/bio.html">Bio</a> &nbsp;/&nbsp;
                   <a href="https://www.linkedin.com/in/tarunvinodkumar">Linkedin</a>
-                  <!--
-                  <a href="https://scholar.google.com/citations?hl=en&user=jktWnL8AAAAJ">Scholar</a> &nbsp;/&nbsp;
-                  <a href="https://twitter.com/jon_barron">Twitter</a> &nbsp;/&nbsp;
-                  <a href="https://github.com/jonbarron/">Github</a>
-                  -->
                 </p>
               </td>
-              <td style="padding:2.5%;width:37%;max-width:37%">
-                <a href="images/tarun/Me_square.JPG"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/tarun/Me.jpg" class="hoverZoomLink"></a>
+              <td class="intro-image-cell" style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/tarun/Me_square.JPG" class="hoverZoomLink"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/tarun/Me.jpg"></a>
               </td>
             </tr>
           </tbody></table>
-          <!--
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-              <tr>
-              <td style="padding:16px;width:100%;vertical-align:middle">
-                <h2>Research</h2>
-                <p>
-                  I'm interested in computer vision, deep learning, generative AI, and image processing. Most of my research is about inferring the physical world (shape, motion, color, light, etc) from images, usually with radiance fields. Some papers are <span class="highlight">highlighted</span>.
-                </p>
-              </td>
-            </tr>
-          </tbody></table>
-          -->
+
 		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 		  <tbody>
 			<tr>
@@ -126,7 +99,7 @@
 		  </tbody>
 		</table>
 			
-          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
               <tr>
                 <td id="tabs" style="padding:16px;width:100%;vertical-align:middle">
@@ -138,7 +111,6 @@
                   </div>
 
                   <div id="experience" class="tabcontent" style="display:block;"><h2 class="mobile-section-title">Experience</h2>
-                    <!-- Internships, research positions, industry roles -->
                     <div class="group">
                       <div class="group-row">
                         <div class="date-col">
@@ -218,11 +190,9 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
 
                   <div id="education" class="tabcontent" style="display:none;"><h2 class="mobile-section-title">Education</h2>
-                    <!-- BS, MS, PhD info -->
                     <div class="group">
                       <div class="group-row">
                         <div class="date-col">
@@ -243,56 +213,21 @@
                         </div>
                       </div>
                     </div>
-
                   </div>
 
                   <div id="publications" class="tabcontent" style="display:none;"><h2 class="mobile-section-title">Publications</h2>
-                    <!--
-                    <div class="flex flex-col gap-12">
-                      <article class="flex flex-col md:flex-row gap-8 md:gap-12 border-t border-neutral-200 dark:border-neutral-800 pt-12 p-6 -mx-6 rounded-xl transition-colors " style="opacity: 1; transform: none;">
-                        <!--
-                        <div class="relative w-full md:w-64 h-40 flex-shrink-0 rounded-lg overflow-hidden bg-neutral-100 dark:bg-neutral-900">
-                          <img alt="Sensor-Embedded Tissue Phantom for Magnetic Resonance Elastography Mechanical Failure Testing" loading="lazy" decoding="async" data-nimg="fill" class="object-cover" src="images/tarun/MREPaper.png" style="position: absolute; height: 40%; width: 40%; inset: 0px; color: transparent;">
-                        </div>
-                        -|->
-                        <div class="flex-1">
-                          <h3 class="font-serif text-2xl font-medium text-primary dark:text-white block mb-3 leading-tight">
-                            <a href="https://asmedigitalcollection.asme.org/medicaldevices/article-abstract/18/4/041003/1202997/Sensor-Embedded-Tissue-Phantom-for-Magnetic?redirectedFrom=fulltext" target="_blank" rel="noopener noreferrer" class="text-primary dark:text-white underline decoration-primary-light/50 hover:decoration-primary">Sensor-Embedded Tissue Phantom for Magnetic Resonance Elastography Mechanical Failure Testing
-                            </a>
-                          </h3>
-                          <div class="text-lg text-neutral-600 dark:text-neutral-400 mb-2">
-                            <span><a class="text-primary dark:text-white">Charles P. Hong</a>, </span>
-                            <span><span class="font-bold text-primary dark:text-white">Ethan Villalovoz</span>, </span>
-                            <span><a class="text-primary dark:text-white">Heriberto Andres Nieves-Vasquez</a>, </span>
-                            <span><a class="text-primary dark:text-white">Jun Ueda</a> </span>
-                          </div><div class="text-sm font-mono text-primary-light uppercase tracking-wider mb-6">ASME Journal of Medical Devices (J. Med. Devices), 2024.</div><p class="text-neutral-600 dark:text-neutral-400 text-lg mb-6 leading-relaxed">Investigates a benchtop test setup and system for assessing and validating Magnetic Resonance Elastography (MRE) actuator performance.</p>
-                          <div class="flex gap-3 flex-wrap"><a href="data/MRE_paper.pdf" class="inline-flex items-center px-6 py-2 rounded-full border border-neutral-300 dark:border-neutral-700 text-sm font-medium text-neutral-700 dark:text-neutral-300 hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors" target="_blank" rel="noopener noreferrer">Paper<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" class="ml-2 text-sm opacity-70" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
-                          
-                          </div>
-                        </article>
-                      </div>
-
-                    -->
-
                     <div class="group pub-entry">
-                      <!-- Left image -->
                       <div class="pub-image">
-                        <img src="images/tarun/MREPaper.png"
-                            alt="Sensor-Embedded Tissue Phantom for Magnetic Resonance Elastography Mechanical Failure Testing">
+                        <img src="images/tarun/MREPaper.png" alt="Sensor-Embedded Tissue Phantom for Magnetic Resonance Elastography Mechanical Failure Testing">
                       </div>
-                      <!-- Right text block -->
                       <div class="entry-col">
                         <div class="pub-title">
-                          <a href="https://asmedigitalcollection.asme.org/medicaldevices/article-abstract/18/4/041003/1202997/Sensor-Embedded-Tissue-Phantom-for-Magnetic?redirectedFrom=fulltext"
-                            target="_blank" rel="noopener noreferrer">
+                          <a href="https://asmedigitalcollection.asme.org/medicaldevices/article-abstract/18/4/041003/1202997/Sensor-Embedded-Tissue-Phantom-for-Magnetic?redirectedFrom=fulltext" target="_blank" rel="noopener noreferrer">
                             Sensor-Embedded Tissue Phantom for Magnetic Resonance Elastography Mechanical Failure Testing
                           </a>
                         </div>
                         <div class="pub-authors">
-                          Charles P. Hong,
-                          <span class="pub-author-me">Tarun Vinodkumar</span>,
-                          Heriberto Andres Nieves‑Vasquez,
-                          Jun Ueda
+                          Charles P. Hong, <span class="pub-author-me">Tarun Vinodkumar</span>, Heriberto Andres Nieves‑Vasquez, Jun Ueda
                         </div>
                         <div class="date-col" style="margin-top:4px;">
                           ASME Journal of Medical Devices, 2024
@@ -300,256 +235,51 @@
                         <p style="margin-top:8px;">
                           Investigates a benchtop test setup and system for assessing and validating Magnetic Resonance Elastography (MRE) actuator performance.
                         </p>
-						  <!--
-                        <a href="data/MRE_paper.pdf"
-                          class="pub-button"
-                          target="_blank" rel="noopener noreferrer">
-                          Paper
-                          <!-- simple file icon -|->
-                          <svg viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                            <path d="M224 0H48C21.5 0 0 21.5 0 48v416c0
-                                    26.5 21.5 48 48 48h288c26.5 0 48-21.5
-                                    48-48V160L224 0zm64 448H96c-8.8 0-16-7.2-16-16
-                                    s7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16
-                                    16zm0-96H96c-8.8 0-16-7.2-16-16s7.2-16 16-16h192c8.8
-                                    0 16 7.2 16 16s-7.2 16-16 16zm-80-112V25.6L342.4
-                                    160H208z" />
-                          </svg>
-                        </a>
-						  -->
                       </div>
-                    </div>
-
-                  </div>
-
-                
-                <div id="projects" class="tabcontent" style="display:none;"><h2 class="mobile-section-title">Selected Projects</h2>
-
-                  <div class="group pub-entry">
-                    <div class="pub-image">
-                      <img src="images/tarun/GrasperCAD.png"
-                          alt="Mechatronics Project">
-                    </div>
-                    <div class="entry-col">
-                      <div class="pub-title">
-                        <a href="projects/robotic_chess_manipulator.html">Robotic Chess Manipulator</a>
-                      </div>
-                      <div class="role-title">
-                        ME 4405 Fundamentals of Mechatronics
-                      </div>
-                      <ul>
-                        <li>Designed and implemented a robotic chess piece manipulator with custom grasper, STM32 control, and Hall-effect sensing.</li>
-                      </ul>
                     </div>
                   </div>
 
-                  <div class="group pub-entry">
-                    <div class="pub-image">
-                      <img src="images/tarun/ME2110Render.png"
-                          alt="ME2110 Skadooshinator Robot">
+                  <div id="projects" class="tabcontent" style="display:none;"><h2 class="mobile-section-title">Selected Projects</h2>
+                    <div class="group pub-entry">
+                      <div class="pub-image">
+                        <img src="images/tarun/GrasperCAD.png" alt="Mechatronics Project">
+                      </div>
+                      <div class="entry-col">
+                        <div class="pub-title">
+                          <a href="projects/robotic_chess_manipulator.html">Robotic Chess Manipulator</a>
+                        </div>
+                        <div class="role-title">
+                          ME 4405 Fundamentals of Mechatronics
+                        </div>
+                        <ul>
+                          <li>Designed and implemented a robotic chess piece manipulator with custom grasper, STM32 control, and Hall-effect sensing.</li>
+                        </ul>
+                      </div>
                     </div>
-                    <div class="entry-col">
-                      <div class="pub-title">
-                        <a href="projects/me2110_skadooshinator.html">ME 2110 Major Design Project</a>
+
+                    <div class="group pub-entry">
+                      <div class="pub-image">
+                        <img src="images/tarun/ME2110Render.png" alt="ME2110 Skadooshinator Robot">
                       </div>
-                      <div class="role-title">
-                        ME 2110 Creative Decisions and Design
+                      <div class="entry-col">
+                        <div class="pub-title">
+                          <a href="projects/me2110_skadooshinator.html">ME 2110 Major Design Project</a>
+                        </div>
+                        <div class="role-title">
+                          ME 2110 Creative Decisions and Design
+                        </div>
+                        <ul>
+                          <li>Designed and built an autonomous competition robot focused on high-value tasks and defending from opposing robots. Placed 5th out of over 60 teams.</li>
+                        </ul>
                       </div>
-                      <ul>
-                        <li>Designed and built an autonomous competition robot focused on high-value tasks and defending from opposing robots. Placed 5th out of over 60 teams.</li>
-                      </ul>
                     </div>
                   </div>
-
-                </div>
-
-                
 
                 </td>
               </tr>
             </tbody>
           </table>
 
-<!--
-<tr onmouseout="radmesh_stop()" onmouseover="radmesh_start()" bgcolor="#ffffd0">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='radmesh_image'>
-        <img src='images/radmesh_after.jpg' width=100%>
-      </div>
-      <img src='images/radmesh_before.jpg' width=100%>
-    </div>
-    <script type="text/javascript">
-      function radmesh_start() {
-        document.getElementById('radmesh_image').style.opacity = "1";
-      }
-
-      function radmesh_stop() {
-        document.getElementById('radmesh_image').style.opacity = "0";
-      }
-      radmesh_stop()
-    </script>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://half-potato.gitlab.io/rm/">
-      <span class="papertitle">Radiance Meshes for Volumetric Reconstruction</span>
-    </a>
-    <br>
-    <a href="https://half-potato.gitlab.io/">Alexander Mai</a>,
-    <a href="https://github.com/Shmaug">Trevor Hedstrom</a>,
-    <a href="https://grgkopanas.github.io/">George Kopanas</a>, <br>
-	<a href="https://mediatech.aalto.fi/~janne/index.php">Janne Kontkanen</a>, 
-    <a href="https://jacobsschool.ucsd.edu/faculty/profile?id=253">Falko Kuester</a>,
-    <strong>Jonathan T. Barron</strong>
-    <br>
-    <em>arXiv</em>, 2025
-    <br>
-    <a href="https://half-potato.gitlab.io/rm/">project page</a>
-    /
-    <a href="https://arxiv.org/abs/2512.04076">arXiv</a>
-    <p></p>
-    <p>
-	Parameterizing a scene with a Delaunay tetrahedralization and a neural field yields a scene representation that is accurate, fast to render, easy to edit, and backwards-compatible.
-    </p>
-  </td>
-</tr>
-
-<tr onmouseout="MRE_stop()" onmouseover="MRE_start()">
-  <td style="padding:16px;width:20%;vertical-align:middle">
-    <div class="one">
-      <div class="two" id='MRE_image'>
-				<img src='images/tarun/MREPaper.png' width=100%>
-			</div>
-      <img src='images/tarun/MREPaper.png' width=100%>
-    </div>
-    <script type="text/javascript">
-          function MRE_start() {
-            document.getElementById('MRE_image').style.opacity = "1";
-          }
-
-          function MRE_stop() {
-            document.getElementById('MRE_image').style.opacity = "0";
-          }
-          MRE_stop()
-    </script>
-  </td>
-  <td style="padding:8px;width:80%;vertical-align:middle">
-    <a href="https://m-niemeyer.github.io/nexf/">
-      <span class="papertitle">Sensor-Embedded Tissue Phantom for Magnetic Resonance Elastography Mechanical Failure Testing</span>
-    </a>
-    <br>
-    <a>Charles P. Hong</a> 
-    <strong>Tarun Vinodkumar</strong>,
-    <a>Heriberto Andres Nieves-Vasquez</a>
-    <a>Jun Ueda</a>
-    <br>
-    <em>ASME Journal of Medical Devices</em>, 2024
-    <br>
-    <a href="https://m-niemeyer.github.io/nexf/">project page</a>
-    /
-    <a href="https://asmedigitalcollection.asme.org/medicaldevices/article-abstract/18/4/041003/1202997/Sensor-Embedded-Tissue-Phantom-for-Magnetic?redirectedFrom=fulltext">ASME J. Med. Devices</a>
-    <p></p>
-    <p>
-	Developed a benchtop test setup and system for assessing and validating MRE actuator performance.
-    </p>
-  </td>
-</tr>
-          </tbody></table>
--->
-
-
-
-
-          <!--
-					<table style="width:100%; margin:0 auto; border:0; border-spacing:0; padding:16px;"><tbody>
-            <tr>
-              <td>
-                <h2>Miscellanea</h2>
-              </td>
-            </tr>
-          </tbody></table>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            
-           
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #fcb97d;">
-								 <h2>Micropapers</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2112.11687">Squareplus: A Softplus-Like Algebraic Rectifier</a>
-                <br>
-                <a href="https://arxiv.org/abs/2010.09714">A Convenient Generalization of Schlick's Bias and Gain Functions</a>
-                <br>
-                <a href="https://arxiv.org/abs/1704.07483">Continuously Differentiable Exponential Linear Units</a>
-                <br>
-                <a href="https://jonbarron.info/data/cvpr2023_llm_workshop_annotated.pdf">Scholars & Big Models: How Can Academics Adapt?</a>
-              </td>
-            </tr>
-
-
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #aaba9e;">
-								 <h2>Recorded Talks</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://www.youtube.com/watch?v=hFlF33JZbA0">Radiance Fields and the Future of Generative Media, 2025</a><br>				  
-                <a href="https://www.youtube.com/watch?v=h9vq_65eDas">View Dependent Podcast, 2024</a><br>
-                <a href="https://www.youtube.com/watch?v=4tDhYsFuEqo">Bay Area Robotics Symposium, 2023
-</a><br>
-                <a href="https://youtu.be/TvWkwDYtBP4?t=7604">EGSR Keynote, 2021</a><br>
-				<a href="https://www.youtube.com/watch?v=nRyOzHpcr4Q">TUM AI Lecture Series, 2020</a><br>
-				<a href="https://www.youtube.com/watch?v=HfJpQCBTqZs">Vision & Graphics Seminar at MIT, 2020</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #c6b89e;">
-								 <h2>Academic Service</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="https://iccv.thecvf.com/">Lead Area Chair, ICCV 2025</a>
-                <br>
-                <a href="https://cvpr.thecvf.com/Conferences/2025/Organizers">Lead Area Chair, CVPR 2025</a>
-                <br>
-                <a href="https://cvpr.thecvf.com/Conferences/2024/Organizers">Area Chair, CVPR 2024</a>
-                <br>
-                <a href="https://cvpr2023.thecvf.com/Conferences/2023/Organizers">Demo Chair, CVPR 2023</a>
-                <br>
-                <a href="https://cvpr2022.thecvf.com/area-chairs">Area Chair, CVPR 2022</a>
-                <br>
-                <a href="http://cvpr2021.thecvf.com/area-chairs">Area Chair & Award Committee Member, CVPR 2021</a>
-                <br>
-                <a href="http://cvpr2019.thecvf.com/area_chairs">Area Chair, CVPR 2019</a>
-                <br>
-                <a href="http://cvpr2018.thecvf.com/organizers/area_chairs">Area Chair, CVPR 2018</a>
-              </td>
-            </tr>
-						
-						
-           
-            <tr>
-              <td align="center" style="padding:16px;width:20%;vertical-align:middle">
-						     <div class="colored-box" style="background-color: #edd892;">
-								 <h2>Teaching</h2>
-								 </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:center">
-                <a href="http://inst.eecs.berkeley.edu/~cs188/sp11/announcements.html">Graduate Student Instructor, CS188 Spring 2011</a>
-                <br>
-                <a href="http://inst.eecs.berkeley.edu/~cs188/fa10/announcements.html">Graduate Student Instructor, CS188 Fall 2010</a>
-                <br>
-                <a href="http://aima.cs.berkeley.edu/">Figures, "Artificial Intelligence: A Modern Approach", 3rd Edition</a>
-              </td>
-            </tr>
-            
-          </tbody></table>
-          -->
           <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
               <td style="padding:0px">
@@ -564,6 +294,7 @@
       </tr>
     </table>
 	</div>
+
     <script>
 	function openTab(evt, tabId) {
 	  var i, tabcontent, tablinks;
@@ -582,36 +313,36 @@
 	  }
 	}
 	
-function openTabById(tabId) {
-  // Check if the user is on a mobile device (matching the CSS media query)
-  if (window.innerWidth < 768) {
-    var targetSection = document.getElementById(tabId);
-    if (targetSection) {
-      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-    return; // Exit early so desktop tab logic doesn't hide other sections
-  }
-
-  // Desktop Tab-Switching Logic
-  var tabButtonMap = {
-    experience: 0,
-    education: 1,
-    publications: 2,
-    projects: 3
-  };
-
-  openTab(null, tabId);
-
-  var tablinks = document.getElementsByClassName("tablink");
-  if (tablinks[tabButtonMap[tabId]]) {
-    tablinks[tabButtonMap[tabId]].classList.add("active");
-  }
-
-  var target = document.getElementById("tabs");
-  if (target) {
-    target.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-}
+	function openTabById(tabId) {
+	  // Mobile Responsive Behavior: Scroll directly to section anchor instead of changing hidden tab states
+	  if (window.innerWidth < 768) {
+	    var targetSection = document.getElementById(tabId);
+	    if (targetSection) {
+	      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+	    }
+	    return;
+	  }
+	
+	  // Desktop Behavior
+	  var tabButtonMap = {
+		experience: 0,
+		education: 1,
+		publications: 2,
+		projects: 3
+	  };
+	
+	  openTab(null, tabId);
+	
+	  var tablinks = document.getElementsByClassName("tablink");
+	  if (tablinks[tabButtonMap[tabId]]) {
+		tablinks[tabButtonMap[tabId]].classList.add("active");
+	  }
+	
+	  var target = document.getElementById("tabs");
+	  if (target) {
+		target.scrollIntoView({ behavior: "smooth", block: "start" });
+	  }
+	}
 		
 	  function updateHeaderOnScroll() {
 	    const header = document.querySelector('.site-header');
