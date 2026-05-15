@@ -376,9 +376,9 @@ body > table {
   border: 1px solid #002D72;
   border-radius: 20px;
   box-shadow:
-    0 0 0 1px rgba(0, 45, 114, 0.25),
-    0 0 24px rgba(0, 45, 114, 0.08),
-    0 10px 30px rgba(0, 45, 114, 0.05);
+    0 0 0 1px rgba(0, 45, 114, 0.15),
+    0 0 24px rgba(0, 45, 114, 0.10),
+    0 10px 30px rgba(0, 45, 114, 0.06);
   overflow: hidden;
 }
 
