@@ -1312,3 +1312,94 @@ img {
     scroll-margin-top: 96px;
   }
 }
+
+/* ==========================================================================
+   Mobile Responsive Overrides (Scroll-First Layout)
+   ========================================================================== */
+
+@media (max-width: 767px) {
+  /* 1. Force layout tables and cells to behave like block elements stacked vertically */
+  table, tbody, tr, td {
+    display: block !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* 2. Style the intro section (Profile Text & Image) to stack nicely */
+  td[style*="width:63%"], td[style*="width:37%"] {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 15px 5% !important;
+    text-align: center;
+  }
+
+  /* Center and constrain the profile photo size on mobile */
+  .hoverZoomLink img {
+    display: block;
+    margin: 0 auto;
+    max-width: 180px !important;
+    height: auto;
+  }
+
+  /* 3. Hide the desktop tab buttons bar */
+  .tabs {
+    display: none !important;
+  }
+
+  /* 4. Force all sections to display sequentially down the page */
+  .tabcontent {
+    display: block !important; /* Overrides inline display:none from JS */
+    margin-bottom: 48px;
+    opacity: 1 !important;
+  }
+
+  /* 5. Display and style your mobile-specific section headers */
+  .mobile-section-title {
+    display: block !important;
+    font-size: 1.6rem;
+    color: #222;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+  }
+
+  /* 6. Fix alignment for experience timeline & project entries */
+  .group-row {
+    display: flex;
+    flex-direction: column !important;
+    gap: 6px;
+    margin-bottom: 16px;
+  }
+
+  .date-col {
+    width: 100% !important;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #666;
+  }
+
+  .entry-col {
+    width: 100% !important;
+  }
+
+  /* For publications and projects with side-by-side images */
+  .pub-entry {
+    display: flex;
+    flex-direction: column !important;
+    gap: 16px;
+  }
+
+  .pub-image {
+    width: 100% !important;
+    max-width: 240px !important;
+    margin: 0 auto;
+  }
+}
+
+/* Hide mobile headers on desktop screens */
+@media (min-width: 768px) {
+  .mobile-section-title {
+    display: none !important;
+  }
+}
