@@ -324,8 +324,9 @@ body {
   /*background-color: #ACE1AF !important; /* celadon */
   /*background-color: #ecf7d7 !important; /* pale pastel green */
   /*background-color: #ffffff !important; /* white */
-  padding-top: 88px;
-  padding-bottom: 32px;
+  background-color: #F0F2E4 !important; /* soft sage green */
+  padding-top: 92px;
+  padding-bottom: 24px;
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -338,7 +339,7 @@ body > table {
   background-color: #F0F2E4 !important; /* soft sage green */
   border-radius: 20px;
   /*box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);*/
-  border: 1px solid #d6e2f1;
+  border: 2px solid #d6e2f1;
   box-shadow:
     0 0 0 1px rgba(214, 226, 241, 0.45),
     0 0 28px rgba(0, 45, 114, 0.10),
