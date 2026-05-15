@@ -325,7 +325,7 @@ body {
   /*background-color: #ecf7d7 !important; /* pale pastel green */
   /*background-color: #ffffff !important; /* white */
   background-color: #F0F2E4 !important; /* soft sage green */
-  padding-top: 100px;
+  padding-top: 92px;
   padding-bottom: 24px;
   padding-left: 16px;
   padding-right: 16px;
@@ -371,12 +371,12 @@ body > table {
 .page-shell {
   width: 100%;
   max-width: 950px;
-  margin: 18px auto 24px auto;
+  margin: 22px auto 24px auto;
   background-color: #F0F2E4;
-  border: 3px solid #002D72;
+  border: 1px solid #002D72;
   border-radius: 20px;
   box-shadow:
-    0 0 0 1px rgba(0, 45, 114, 0.10),
+    0 0 0 1px rgba(0, 45, 114, 0.25),
     0 0 24px rgba(0, 45, 114, 0.08),
     0 10px 30px rgba(0, 45, 114, 0.05);
   overflow: hidden;
