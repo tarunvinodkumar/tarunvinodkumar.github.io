@@ -582,26 +582,36 @@
 	  }
 	}
 	
-	function openTabById(tabId) {
-	  var tabButtonMap = {
-		experience: 0,
-		education: 1,
-		publications: 2,
-		projects: 3
-	  };
-	
-	  openTab(null, tabId);
-	
-	  var tablinks = document.getElementsByClassName("tablink");
-	  if (tablinks[tabButtonMap[tabId]]) {
-		tablinks[tabButtonMap[tabId]].classList.add("active");
-	  }
-	
-	  var target = document.getElementById("tabs");
-	  if (target) {
-		target.scrollIntoView({ behavior: "smooth", block: "start" });
-	  }
-	}
+function openTabById(tabId) {
+  // Check if the user is on a mobile device (matching the CSS media query)
+  if (window.innerWidth < 768) {
+    var targetSection = document.getElementById(tabId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+    return; // Exit early so desktop tab logic doesn't hide other sections
+  }
+
+  // Desktop Tab-Switching Logic
+  var tabButtonMap = {
+    experience: 0,
+    education: 1,
+    publications: 2,
+    projects: 3
+  };
+
+  openTab(null, tabId);
+
+  var tablinks = document.getElementsByClassName("tablink");
+  if (tablinks[tabButtonMap[tabId]]) {
+    tablinks[tabButtonMap[tabId]].classList.add("active");
+  }
+
+  var target = document.getElementById("tabs");
+  if (target) {
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+}
 		
 	  function updateHeaderOnScroll() {
 	    const header = document.querySelector('.site-header');
