@@ -671,10 +671,6 @@ body {
   padding-top: 72px; /* prevents content from hiding under fixed header */
 }
 
-/* keep your page table aligned under the header */
-body > table {
-  margin-top: 0;
-}
 
 .site-header {
   position: fixed;
@@ -1009,5 +1005,83 @@ html, body {
   img {
     max-width: 100%;
     height: auto;
+  }
+}
+  
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 78px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .page-shell {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0 14px 0;
+    border-radius: 12px;
+  }
+
+  .intro-row {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .intro-row > td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 12px 14px !important;
+  }
+
+  .intro-row td[style*="width:63%"],
+  .intro-row td[style*="width:37%"] {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .intro-row td:last-child {
+    text-align: center !important;
+    padding-bottom: 0 !important;
+  }
+
+  .intro-row td:first-child {
+    padding-top: 0 !important;
+  }
+
+  .intro-row img[alt="profile photo"] {
+    display: block !important;
+    width: 145px !important;
+    max-width: 145px !important;
+    margin: 0 auto 10px auto !important;
+  }
+
+  .name {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+
+  .page-shell table,
+  .page-shell tbody,
+  .page-shell tr,
+  .page-shell td {
+    max-width: 100% !important;
   }
 }
