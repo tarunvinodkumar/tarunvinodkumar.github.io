@@ -956,4 +956,58 @@ body > table {
     font-size: 14px;
     line-height: 1.5;
   }
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-top: 78px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .page-shell {
+    width: 100%;
+    max-width: 100%;
+    margin: 10px 0 14px 0;
+    border-radius: 12px;
+  }
+
+  .page-shell,
+  .page-shell table,
+  .page-shell tbody,
+  .page-shell tr,
+  .page-shell td {
+    max-width: 100% !important;
+  }
+
+  .intro-row,
+  .intro-row > td {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .intro-row img {
+    width: 140px !important;
+    max-width: 140px !important;
+    height: auto !important;
+    margin: 0 auto 10px auto !important;
+    display: block !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
