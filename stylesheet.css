@@ -135,8 +135,9 @@ span.highlight {
 
 .tabcontent {
   border: none;
-  padding: 0;
+  padding: 0px 24px; /* Change 0 to 32px (or your preferred spacing) for left/right margins */
   margin-top: 8px;
+  box-sizing: border-box; /* Keeps the container perfectly aligned within the shell */
 }
 
 /* Base Flexible Timeline Framework (Ethan-Style) */
@@ -149,8 +150,8 @@ span.highlight {
 }
 
 .item-icon-wrap {
-  width: 40px !important;
-  height: 40px !important;
+  width: 55px !important;
+  height: 55px !important;
   flex-shrink: 0 !important;
 }
 
@@ -432,6 +433,8 @@ html {
     opacity: 1 !important;
     margin-bottom: 48px !important;
     scroll-margin-top: 115px;
+    padding: 0 16px !important; /* Slightly smaller padding for mobile screens */
+    box-sizing: border-box;
   }
 
   .mobile-section-title {
