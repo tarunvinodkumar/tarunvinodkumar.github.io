@@ -428,7 +428,7 @@ html {
     padding: 12px 0 !important;
   }
 
-  /* 3. Added absolute circular safety parameters to fix photo distortion */
+  /* 3. Added absolute circular safety parameters to fix photo distortion /
   .intro-image-cell img {
     width: 130px !important;
     height: 130px !important;
