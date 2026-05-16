@@ -386,7 +386,8 @@ html {
    ========================================================================== */
 @media (max-width: 767px) {
   body {
-    padding: 110px 12px 24px 12px !important;
+    /* 1. Decreased top padding to pull the main body closer to the fixed header */
+    padding: 88px 12px 24px 12px !important;
   }
 
   table, tbody, tr, td {
@@ -407,8 +408,11 @@ html {
     height: 32px !important;
   }
 
+  /* 2. Added explicit side margins/padding to keep text off the card borders uniformally */
   .intro-text-cell {
     order: 2;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
 
   .intro-text-cell .name {
@@ -423,13 +427,21 @@ html {
     padding: 12px 0 !important;
   }
 
+  /* 3. Added absolute circular safety parameters to fix photo distortion */
   .intro-image-cell img {
     width: 130px !important;
     height: 130px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
   }
 
   .tabs {
     display: none !important;
+  }
+
+  .news-section {
+    padding-left: 24px !important;
+    padding-right: 24px !important;
   }
 
   .tabcontent {
@@ -437,7 +449,7 @@ html {
     opacity: 1 !important;
     margin-bottom: 48px !important;
     scroll-margin-top: 115px;
-    padding: 0 16px !important; /* Slightly smaller padding for mobile screens */
+    padding: 0 24px !important; /* 2. Increased side border spacing for timeline tabs */
     box-sizing: border-box;
   }
 
