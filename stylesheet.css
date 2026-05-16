@@ -420,6 +420,7 @@ html {
     text-align: center !important;
   }
 
+  /*
   .intro-image-cell {
     display: flex !important;
     justify-content: center !important;
@@ -434,7 +435,25 @@ html {
     border-radius: 50% !important;
     object-fit: cover !important;
   }
+*/
 
+  .intro-image-cell {
+    display: block !important;
+    text-align: center !important;
+    order: 1;
+    padding: 12px 0 !important;
+    width: 100% !important;
+  }
+
+  .intro-image-cell img {
+    width: 135px !important;
+    height: 175px !important; /* Unequal width & height turns the 50% radius into an oval */
+    border-radius: 50% !important; /* Keeps the smooth, continuous curved edge */
+    object-fit: cover !important;
+    margin: 0 auto !important; /* Bulletproof centering on mobile screens */
+    display: block !important;
+  }
+  
   .tabs {
     display: none !important;
   }
