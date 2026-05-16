@@ -335,8 +335,8 @@ html {
 
 /* News Section Styling Elements */
 .news-section {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 .news-section h2 {
